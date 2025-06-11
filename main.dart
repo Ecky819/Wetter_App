@@ -15,7 +15,7 @@ void main() {
   temps.add(weatherData[2]['temp']);
 
   // Berechne den Durchschnitt der Temperaturen
-  double? avgTemp = (temps[0] + temps[1] + temps[2]) / 3;
+  double? avgTemp = ((temps[0] ?? 0) + (temps[1] ?? 0) + (temps[2] ?? 0)) / 3;
 
   print('Durchschnittstemperatur: $avgTemp');
 }
